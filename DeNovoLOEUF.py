@@ -36,7 +36,7 @@ genes = genes.key_by('geneIds')
 
 #import families and their clinical data
 if not hl.hadoop_exists('CMG.ht'):
-    CMG = hl.import_table('out.tsv', impute=True)
+    CMG = hl.import_table('clinical.tsv', impute=True)
     CMG.key_by('s')
     CMG.write('CMG.ht')
 CMG = hl.read_table('CMG.ht')
