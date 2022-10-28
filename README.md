@@ -12,5 +12,5 @@ docker-compose exec --detach pipeline-runner python3 -m seqr_loading SeqrMTToEST
 Step 2: Now run DeNovoLOEUF.py
 
 - Requires pedigree file for trio data (example provided in GitHub)
-- list of GenCC genes (provided in GitHub)
+- list of disease genes (provided in GitHub)
 - clinical data (example provided in GitHub)
